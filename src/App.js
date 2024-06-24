@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "./App.css";
 import cinemaList from "./data";
 import IconScreen from "./IconScreen";
 import Confirm from "./Confirm";
-// import confim from "./confim";
+
 function App() {
   const [updatedList, setUpdatedList] = useState(cinemaList);
   const [seatClicked, setSeatClicked] = useState(false);
@@ -11,6 +11,18 @@ function App() {
   const [buttonYes, setButtonYes] = useState(false);
   const [isModelOpen, setIsModelOpen] = useState(false);
   const [isMouseDown, setIsMouseDown] = useState(false);
+
+  const getSelectedSeatDetails = useCallback(() => {
+    const selectedSeats = [];
+    Object.keys(updatedList).forEach((item) => {
+      Object.keys(updatedList[item]).forEach((item2) => {
+        if (updatedList[item][item2]["isSeatBooked"] === "setSelected") {
+          selectedSeats.push({ row: item, seat: item2 });
+        }
+      });
+    });
+    return selectedSeats;
+  }, [updatedList]);
 
   useEffect(() => {
     if (buttonYes) {
@@ -24,10 +36,11 @@ function App() {
       setButtonYes(false); // Reset buttonYes after handling
     }
   }, [buttonYes, getSelectedSeatDetails]);
+
   const handleClick = (row, seat, buttonElement) => {
     setSeatClicked(true);
     const updatedListClick = { ...cinemaList };
-    if (updatedListClick[row][seat]["isSeatBooked"] == "setSelected") {
+    if (updatedListClick[row][seat]["isSeatBooked"] === "setSelected") {
       updatedListClick[row][seat]["isSeatBooked"] = "N/A";
       setUpdatedList(updatedListClick);
       setSelectedSeatCount((prevCount) => prevCount - 1);
@@ -41,18 +54,6 @@ function App() {
       setSelectedSeatCount((prevCount) => prevCount + 1);
     }
   };
-
-  function getSelectedSeatDetails() {
-    const selectedSeats = [];
-    Object.keys(updatedList).forEach((item) => {
-      Object.keys(updatedList[item]).forEach((item2) => {
-        if (updatedList[item][item2]["isSeatBooked"] === "setSelected") {
-          selectedSeats.push({ row: item, seat: item2 });
-        }
-      });
-    });
-    return selectedSeats;
-  }
 
   const handleCancel = () => {
     const selectedSeats = getSelectedSeatDetails();
@@ -131,7 +132,6 @@ function App() {
                       transition:
                         "background-color blue 0.3s, border-color blue 0.3s",
                     }}
-                    // onClick={(e) => handleClick(item, item2, e)}
                     onMouseDown={() => handleMouseDown(item, item2)}
                     onMouseEnter={() => handleMouseEnter(item, item2)}
                   >
