@@ -23,7 +23,7 @@ function App() {
       setSeatClicked(false);
       setButtonYes(false); // Reset buttonYes after handling
     }
-  }, [buttonYes]);
+  }, [buttonYes, getSelectedSeatDetails]);
   const handleClick = (row, seat, buttonElement) => {
     setSeatClicked(true);
     const updatedListClick = { ...cinemaList };
