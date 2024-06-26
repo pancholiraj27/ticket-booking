@@ -116,7 +116,6 @@
 
 .confimContainer {
   position: absolute;
-  background-color: rgb(107, 132, 174);
   top: 0;
   bottom: 0;
   left: 0;
@@ -124,6 +123,7 @@
   width: 50%;
   height: 20%;
   margin: auto;
+  transform: translate(-2%, -100%);
   text-align: center;
   padding-top: 10px;
   border-radius: 12px;
@@ -153,4 +153,41 @@
   background-color: rgb(255, 110, 110);
   border: 1px solid rgb(255, 110, 110);
   color: white;
+}
+
+.buttonsContainer{
+  display: flex;
+}
+
+.insideContainer{
+  height: 50vh;
+  background-color: rgb(107, 132, 174);
+  border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .seatsContainer{
+    width: 95%;
+  }
+  .heading{
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    min-height: 30vh;
+  }
+  .setHighlighted{
+    display: none;
+  }
+.confimContainer{
+  width: 80%;
+}
+}
+@media screen and (max-width: 480px) {
+  .confimContainer{
+  width: 90%;
+}
 }
