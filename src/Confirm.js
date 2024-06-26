@@ -3,6 +3,7 @@ import React from "react";
 const Confirm = ({ setIsModelOpen, setButtonYes }) => {
   return (
     <div className="confimContainer">
+    <div className="insideContainer">
       <h1>Are you sure you want to book the ticket?</h1>
       <div className="buttons2">
         <div
@@ -22,6 +23,7 @@ const Confirm = ({ setIsModelOpen, setButtonYes }) => {
           No
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -87,6 +87,7 @@ function App() {
     }
   };
 
+
   return (
     <div onMouseUp={handleMouseUp}>
       {isModelOpen ? (
@@ -96,8 +97,10 @@ function App() {
       )}
       <div className="heading">
         <h1>Select your ticket</h1>
+        <div className="buttonsContainer">
         <div className="showFeature booked">Booked</div>
-        <div className="showFeature setSelected">Booked</div>
+        <div className="showFeature setSelected">Selected</div>
+        </div>
         <div className="showFeature setHighlighted">
           Right click & hover to select multiple seats
         </div>
@@ -158,3 +161,4 @@ function App() {
 }
 
 export default App;
+
