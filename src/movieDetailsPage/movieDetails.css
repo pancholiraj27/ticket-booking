@@ -1,0 +1,282 @@
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.bannerCover {
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  height: 70vh;
+  position: absolute;
+  top: 0;
+}
+.movieDetailPage {
+  position: relative;
+}
+.details {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  position: absolute;
+  top: 0;
+  height: 70vh;
+  left: 10%;
+}
+.posterImg {
+  width: 22%;
+  background: none;
+  border-radius: 12px;
+  box-shadow: 5px 10px 18px black;
+}
+.posterImg img {
+  width: 100%;
+  border-radius: 12px;
+}
+.moviePageDetail {
+  margin-left: 40px;
+}
+
+.moviePageDetail h1 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.ratings {
+  display: flex;
+  background-color: rgb(51, 51, 51);
+  cursor: pointer;
+  padding: 12px 24px;
+  align-items: center;
+  border-radius: 8px;
+  color: #fff;
+  margin-top: 20px;
+}
+.ratings span {
+  margin-left: 10px;
+}
+
+.availableIn,
+.availableLanguage {
+  background-color: rgb(229, 229, 229);
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(0, 0, 0);
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 2px 8px;
+  box-shadow: 5px 10px 50px black;
+}
+
+.movieTimeTypeDate {
+  color: #fff;
+  font-size: 18px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 10px 1px 50px black;
+}
+
+.moviePageDetail button {
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+  letter-spacing: 0.2px;
+  background-color: rgb(248, 68, 100);
+  border-radius: 12px;
+  margin-top: 20px;
+  outline: none;
+  border: rgb(248, 68, 100);
+  cursor: pointer;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+.moviePageDetail button:hover {
+  box-shadow: 5px 5px 20px black;
+}
+.movieDetailPage .bookButton {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.aboutTheMovie {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.aboutTheMovie h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.aboutTheMovie p {
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: gray;
+}
+
+.overflowWrapper {
+  background: #4e4e4ebd;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+}
+.movieTypeContainer {
+  background-color: #fff;
+  position: absolute;
+  width: 40%;
+  margin: 0 auto;
+  top: 10%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 24px;
+  box-shadow: 10px 40px 100px black;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  max-height: 80vh;
+}
+
+.movieTypeHeading {
+  padding: 24px 24px;
+  position: relative;
+}
+
+.movieTypeHeading p {
+  font-size: 18px;
+}
+.movieTypeHeading span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.cross {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  cursor: pointer;
+}
+.cross:hover {
+  transform: scale(1.2);
+}
+.movieTypeHeading p {
+  margin-bottom: 5px;
+}
+
+.movieTypeLanguage {
+  background-color: rgb(242, 245, 249);
+  color: rgb(102, 102, 102);
+  font-weight: 100;
+  padding: 12px 24px;
+  border-top: 1px solid rgb(102, 102, 102);
+}
+
+.movieTypeList {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 24px;
+}
+.movieTypeList div {
+  color: rgb(248, 68, 100);
+  border: 1px solid rgb(204, 204, 204);
+  margin-right: 20px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.movieTypeList div:hover {
+  background-color: rgb(248, 68, 100);
+  color: #fff;
+}
+
+.movieTypeListLink {
+  color: rgb(248, 68, 100);
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .bannerCover {
+    display: none;
+  }
+  .banner img {
+    height: auto;
+    object-fit: contain;
+  }
+  .details {
+    position: relative;
+    height: auto;
+    width: 100%;
+    left: 0;
+  }
+  .posterImg {
+    display: none;
+  }
+  .moviePageDetail {
+    width: 90%;
+    margin-left: 0;
+    margin: 0 auto;
+  }
+  .moviePageDetail h1 {
+    color: black;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  .ratings {
+    margin-top: 10px;
+  }
+  .movieTimeTypeDate {
+    box-shadow: none;
+    color: rgb(102, 102, 102);
+  }
+  .availableIn,
+  .availableLanguage {
+    box-shadow: none;
+  }
+
+  .availableIn,
+  .availableLanguage {
+    font-size: 14px;
+  }
+  .movieTimeTypeDate {
+    font-size: 14px;
+  }
+
+  /* popup */
+  .movieTypeContainer {
+    width: 100%;
+    height: 80vh;
+    top: 30%;
+    box-shadow: 10px 10px 500px black;
+    font-size: 14px;
+  }
+
+  .aboutTheMovie {
+    width: 90%;
+  }
+  .aboutTheMovie h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .aboutTheMovie p {
+    font-size: 12px;
+  }
+
+  .moviePageDetail button {
+    font-size: 14px;
+  }
+}

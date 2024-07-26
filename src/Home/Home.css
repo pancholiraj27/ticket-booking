@@ -1,0 +1,88 @@
+.moviesContainer {
+  width: 80%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-decoration: none;
+}
+.homeMainContainer {
+  background-color: rgb(242, 242, 242);
+}
+
+.movieContainer {
+  width: 20%;
+  margin: 30px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+
+.movieContainer:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 10px 50px black;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.moviePoster {
+  width: 100%;
+}
+.moviePoster img {
+  width: 100%;
+  border-radius: 12px;
+}
+.link {
+  text-decoration: none;
+}
+
+.movieType {
+  overflow: hidden;
+}
+.movieType p {
+  font-weight: 900;
+  margin: 5px 0;
+  font-size: 16px;
+  color: black;
+}
+.movieType span {
+  color: black;
+  color: gray;
+}
+
+.movieType p,
+.movieType span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block; /* or inline-block depending on your layout */
+}
+.homeWrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 510px) {
+  .moviesContainer {
+    justify-content: space-between;
+  }
+  .movieContainer {
+    width: 40%;
+  }
+  .movieContainer {
+    margin: 30px 10px;
+  }
+  .homeWrapper {
+    font-size: 10px;
+  }
+  .movieType p {
+    font-size: 12px;
+  }
+  .movieType span {
+    font-size: 10px;
+  }
+}

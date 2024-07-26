@@ -1,0 +1,176 @@
+.theaterContainer {
+  background-color: rgb(242, 242, 242);
+}
+
+.movieDetailLang {
+  border-bottom: 1px solid rgb(25, 25, 25);
+  padding: 12px 0;
+  background-color: #fff;
+}
+.movieDetailLangWrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.movieDetailLangWrapper h1 {
+  font-size: 24px;
+}
+
+.movieDetailType {
+  margin: 20px 0 10px;
+  cursor: text;
+}
+.movieDetailType span {
+  border: 1px solid rgb(102, 102, 102);
+  color: rgb(102, 102, 102);
+  margin-right: 20px;
+  border-radius: 12px;
+  padding: 8px 24px;
+  font-size: 12px;
+}
+.theaterListContainer {
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 12px;
+}
+
+.theaterDetail {
+  border-top: 2px solid rgb(244, 244, 244);
+  display: flex;
+  align-items: center;
+}
+.theaterNameAndMore {
+  margin: 20px 0;
+  width: 30%;
+}
+.theaterNameAndMore h5 {
+  /* font-size: 12px; */
+}
+.someMoreDetails {
+  display: flex;
+}
+.someMoreDetails span {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  margin-top: 10px;
+  color: rgb(255, 164, 38);
+  font-weight: 100;
+  font-size: 12px;
+}
+.someMoreDetails span:first-child {
+  color: #4abd5d;
+}
+
+.theaterTimings {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 50px;
+}
+.timings {
+  border: 1px solid #999;
+  padding: 12px 24px;
+  border-radius: 12px;
+  margin: 0 10px;
+  color: #4abd5d;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.2s ease-in;
+  font-size: 12px;
+}
+.timings:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.477);
+}
+
+.cancellable {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin: 0px 0 10px 50px;
+}
+.cancellationIcon,
+.nonCancellationIcon {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4abd5d;
+}
+
+.nonCancellationIcon {
+  background: #ffc610;
+}
+
+.cancellableText {
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .theaterDetail {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .theaterTimings {
+    margin: 0;
+  }
+  .cancellable {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .someMoreDetails {
+    display: none;
+  }
+  .theaterNameAndMore {
+    width: 100%;
+  }
+  .cancellationIcon,
+  .nonCancellationIcon {
+    display: none;
+  }
+  .theaterTimingsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .theaterTimings {
+    order: 1;
+  }
+  .cancellable {
+    order: 0;
+  }
+  .cancellableText {
+    margin: 0;
+    font-weight: 100;
+    color: rgb(102, 102, 102);
+  }
+  .timings {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  .theaterListContainer {
+    margin: 0;
+    width: 100%;
+    padding: 12px 24px;
+  }
+  .theaterNameAndMore {
+    margin: 10px 0;
+  }
+  .movieDetailLangWrapper h1 {
+    font-size: 22px;
+  }
+  .movieDetailType {
+    display: none;
+  }
+  .movieDetailLangWrapper {
+    width: 90%;
+  }
+}
+
+.linkToTicketBooking {
+  text-decoration: none;
+}

@@ -1,0 +1,80 @@
+.bannerShimmer {
+  background: none;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  height: 70vh;
+}
+
+.posterImgShimmer {
+  height: 60vh;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.posterImg img {
+  width: 0;
+}
+
+.moviePageDetailShimmer {
+  width: 200%;
+}
+.moviePageDetailShimmer h1 {
+  background-color: palegoldenrod;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 12px;
+  animation: shimmer 3s infinite;
+}
+
+.ratingsShimmer {
+  background-color: transparent;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.ratingsShimmer img {
+  display: none;
+}
+
+.availableLanguageShimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+.movieTimeTypeDateShimmer button {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  width: 100%;
+}
+
+.aboutTheMovieShimmer h3 {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  color: transparent;
+  border-radius: 12px;
+}
+
+.aboutTheMovieShimmer p {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+  color: transparent;
+  border-radius: 12px;
+  height: 10px;
+}

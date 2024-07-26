@@ -1,0 +1,87 @@
+.ticketBookingNav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  align-items: center;
+  border-bottom: 1px solid rgb(204,204,204);
+}
+
+.headingContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headingOtherDetails {
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+.headingDetails h1 {
+  font-weight: 200;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.headingDetails span {
+  font-weight: 700;
+  color: rgb(102, 102, 102);
+}
+
+.linkCrossBtn {
+  text-decoration: none;
+  cursor: pointer;
+}
+.movieTimeMWeb{
+  display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ticketBookingNav{
+    flex-direction: column;    
+  }
+  .headingContainer{
+    width: 100%;
+  }
+  .headingDetails{
+    width: 100%;
+    text-align: center;
+  }
+  .backLogo{
+    width: 10px;
+  }
+  .movieTime{
+    display: none;
+  }
+  .headingDetails span{
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .headingDetails h1{
+    margin-bottom: 2px;
+  }
+  .headingOtherDetails{
+width: 100%;
+margin-top: 20px;
+margin-bottom: 0;
+  }
+  .movieTimeMWeb{
+    display: block;
+  }
+  .headingOtherDetails{
+    justify-content: space-evenly;
+  }
+  .headingOtherDetails div{
+    background-color: #fff;
+    padding: 8px 16px;
+    border-radius: 12px;
+    color: rgb(248, 68, 100);
+    font-size: 12px;
+
+  }
+  .linkCrossBtn{
+    display: flex;
+    align-items: center;
+  }
+}

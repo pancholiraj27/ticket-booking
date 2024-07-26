@@ -1,0 +1,53 @@
+.ticketStatusContainer {
+  display: flex;
+  background: #fff;
+  border-top: 1px solid rgb(204, 204, 204);
+  height: 32px;
+  align-items: center;
+  margin-top: 30px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.wrapperTicketStatus {
+  display: flex;
+  width: 40%;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.showStatus {
+  background-color: green;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  border-radius: 1px;
+}
+.empty {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(31, 173, 62);
+}
+.selected {
+  background-color: rgb(31, 173, 62);
+}
+.sold {
+  background-color: rgb(229, 229, 229);
+}
+.types {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapperTicketStatus {
+    width: 100%;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .ticketStatusContainer {
+    height: 10vh;
+  }
+}

@@ -1,31 +1,28 @@
 import React from "react";
 
-const Confirm = ({ setIsModelOpen, setButtonYes }) => {
+const DynamicPopup = ({ setShowOnly10SeatsAllowed, title }) => {
   return (
     <div className="confimContainer">
-    <div className="insideContainer">
-      <h1>Are you sure you want to book the ticket?</h1>
-      <div className="buttons2">
-        <div
-          onClick={() => {
-            setButtonYes(true);
-            setIsModelOpen(false);
-          }}
-        >
-          Yes
-        </div>
-        <div
-          onClick={() => {
-            setButtonYes(false);
-            setIsModelOpen(false);
-          }}
-        >
-          No
+      <div className="insideContainer">
+        <h1>{title}</h1>
+        <div className="buttons2">
+          <div
+            onClick={() => {
+              setShowOnly10SeatsAllowed(false);
+            }}
+          >
+            Okay
+          </div>
         </div>
       </div>
-    </div>
+      <div
+        className="crossBtn"
+        onClick={() => setShowOnly10SeatsAllowed(false)}
+      >
+        ✖️
+      </div>
     </div>
   );
 };
 
-export default Confirm;
+export default DynamicPopup;

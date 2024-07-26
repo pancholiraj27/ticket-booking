@@ -1,0 +1,240 @@
+.seatsContainer {
+  width: 60%;
+  min-height: 50vh;
+  margin: 0 auto;
+}
+
+.rowContainer {
+  height: 30px;
+  margin: 5px 20px;
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  user-select: none;
+}
+
+.rowContainer:nth-child(n + 9):nth-child(-n + 14) {
+  width: 90%;
+  margin: 5px auto;
+}
+.rowContainer:nth-last-child(-n + 3) {
+  width: 80% !important;
+  margin: 5px auto;
+}
+.rowContainer:nth-last-child(-n + 2) {
+  width: 60% !important;
+}
+.rowContainer:last-child {
+  width: 50% !important;
+  margin: 5px auto;
+}
+.columnRowNumber {
+  margin-right: 20px;
+  font-size: 10px;
+  align-items: center;
+  display: flex;
+}
+.rows {
+  background-color: white;
+  height: auto;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 10px;
+  border: 1px solid rgb(31, 173, 62);
+  cursor: pointer;
+}
+
+.setHighlighted {
+  background-color: rgb(211, 211, 211);
+}
+.showFeature {
+  padding: 12px 20px;
+}
+
+.rows:hover {
+  background-color: #1ea83cbc;
+  color: white;
+  transition: 0.2s ease-out;
+}
+.setSelected {
+  background-color: #1ea83c;
+  pointer-events: auto !important;
+}
+
+.booked {
+  pointer-events: none;
+  border: rgb(229, 229, 229);
+  color: white;
+  background-color: rgb(229, 229, 229);
+}
+
+.screenImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.selectPopup {
+  margin-bottom: 80px;
+}
+.heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 20px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+.buttons {
+  transition: 0.5s ease;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 24px 24px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  z-index: 999;
+}
+
+.buttons div {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons .confirmBookingLink {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.buttons button {
+  background-color: rgb(248, 68, 100);
+  background-color: rgb(248, 68, 100);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 12px 24px;
+  width: 50%;
+  border: none;
+  outline: none;
+}
+.buttons div button {
+  background-color: rgba(204, 204, 204);
+  color: black;
+}
+.confirmBookingLink {
+  text-decoration: none;
+  color: #fff;
+}
+.confirmBookingLink button {
+  width: 50%;
+  background-color: rgb(248, 68, 100) !important;
+  color: #fff !important;
+}
+
+.confimContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 50%;
+  height: 10%;
+  margin: auto;
+  transform: translate(-2%, -100%);
+  text-align: center;
+  padding-top: 10px;
+  border-radius: 12px;
+}
+
+.crossBtn {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  font-size: 20px;
+  cursor: pointer;
+}
+.buttons2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buttons2 div {
+  padding: 12px 30px;
+  border-radius: 12px;
+  border: 1px solid black;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.buttons2 div:hover {
+  transform: scale(1.04);
+}
+
+.buttonsContainer {
+  display: flex;
+}
+
+.insideContainer {
+  height: 20vh;
+  background-color: rgb(211, 211, 211);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 30px 30px 50px black;
+}
+
+@media screen and (max-width: 768px) {
+  .seatsContainer {
+    width: 95%;
+  }
+  .setHighlighted {
+    display: none;
+  }
+  .confimContainer {
+    width: 80%;
+  }
+  .buttons div {
+    width: 100%;
+  }
+  .confirmBookingLink button {
+    width: 100%;
+  }
+  .rowContainer {
+    width: 100%;
+  }
+  .rows {
+    margin: 10px;
+    padding: 12px;
+  }
+  .seatsContainer {
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+@media screen and (max-width: 480px) {
+  .confimContainer {
+    width: 90%;
+  }
+}
+
+.ticketBookingMainContainer {
+  background-color: rgba(204, 204, 204, 0.2);
+}
