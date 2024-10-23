@@ -6,7 +6,7 @@ export const movieData = [
     votes: "671.3k",
     movieType: "Action,Sci-Fi,Thriller",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC42LzEwICA2NzEuM0sgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00352941-fzpzrctbwr-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kalki-2898-ad-et00352941-1718275859.jpg",
     language: ["Telugu", "Kannada", "Malayalam", "Hindi", "Tamil"],
     showIn: ["2D", "IMAX 2D", "3D", "IMAX 3D"],
     duration: "3h 1m",
@@ -38,7 +38,7 @@ export const movieData = [
     votes: "14.9k",
     movieType: "Comedy, Drama",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ni4zLzEwICAzOEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00391805-rbljpjrlez-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/bad-newz-et00391805-1721214274.jpg",
     language: ["Hindi"],
     showIn: ["2D"],
     duration: "2h 22m",
@@ -54,7 +54,7 @@ export const movieData = [
     votes: "36.9k",
     movieType: "Action, Thriller",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS8xMCAgMzkuNEsgVm90ZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00374797-kqytbtqgwb-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kill-et00374797-1718179453.jpg",
     language: ["Hindi"],
     showIn: ["2D"],
     duration: "1h 46m",
@@ -70,7 +70,7 @@ export const movieData = [
     votes: "8.7k",
     movieType: "Action, Adventure, Animation, Comedy",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA5LjFLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00386901-nhetrjsqgw-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/despicable-me-4-et00386901-1724235181.jpg",
     language: ["English", "Hindi", "Tamil", "Telugu"],
     showIn: ["2D", "3D", "IMAX 3D"],
     duration: "1h 34m",
@@ -86,7 +86,7 @@ export const movieData = [
     votes: "54.5k",
     movieType: "Action, Drama, Thriller",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-NS4yLzEwICA1NC41SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00064311-ywcgtfbvag-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/indian-2-et00064311-1720515688.jpg",
     language: ["Hindi", "Tamil"],
     showIn: ["2D"],
     duration: "2h 04m",
@@ -102,7 +102,7 @@ export const movieData = [
     votes: "4.8k",
     movieType: "Action, Adventure, Thriller",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC40LzEwICA0LjhLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00387070-bkjpkakgdz-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/twisters-et00387070-1723539828.jpg",
     language: ["English", "Hindi"],
     showIn: ["2D", "3D", "IMAX 3D"],
     duration: "2h 02m",
@@ -134,7 +134,7 @@ export const movieData = [
     votes: "31.3k",
     movieType: "Animation, Comedy, Drama",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICAzMS4zSyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00384010-ztzeumakky-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/inside-out-2-et00384010-1705486755.jpg",
     language: ["English", "Hindi", "Tamil"],
     showIn: ["2D", "3D", "IMAX 3D", "IMAX 2D"],
     duration: "1h 36m",
@@ -182,7 +182,7 @@ export const movieData = [
     votes: "95.7k",
     movieType: "Comedy, Horror",
     poster:
-      "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC4yLzEwICA5NS43SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00398936-rmwsksawqv-portrait.jpg",
+      "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/munjya-et00398936-1716358299.jpg",
     language: ["Hindi"],
     showIn: ["2D"],
     duration: "2h 3m",
